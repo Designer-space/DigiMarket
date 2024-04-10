@@ -12,14 +12,6 @@ export const metadata: Metadata = {
 	title: "DigiMarket | Home",
 	description:
 		"DigiMarket is the asia's largest creative network for showcasing and discovering creative work",
-	keywords: [
-		"online portfolio.,",
-		"online portfolio site,",
-		"creative professional platform,",
-		"creative network,",
-		"creative community,",
-		"creative talent",
-	],
 };
 
 export default function RootLayout({

@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import ProductReel from "@/components/ProductReel";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowDownToLine, CircleCheck, Leaf } from "lucide-react";
 import Link from "next/link";
@@ -46,7 +47,11 @@ export default function Home() {
 						<Button variant='ghost'>Our Quality Promise &rarr;</Button>
 					</div>
 				</div>
-				{/* TODO: List Products */}
+				<ProductReel
+					query={{ sort: "desc", limit: 4 }}
+					title='Brand New'
+					href='/product'
+				/>
 			</Container>
 			<section className='border-t border-gray-200 bg-gray-50'>
 				<Container className='py-20'>
