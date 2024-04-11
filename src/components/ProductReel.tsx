@@ -1,5 +1,4 @@
 "use client";
-
 import { TQueryValidator } from "@/lib/validators/query-validator";
 import { Product } from "@/payload-types";
 import { trpc } from "@/trpc/client";
@@ -66,9 +65,9 @@ const ProductReel = (props: ProductReelProps) => {
 					<div className='w-full grid grid-cols-2 gap-x-4 gap-y-4 sm:gap-y-4 md:grid-cols-4 md:gap-y-10 lg:gap-y-8'>
 						{map.map((product, i) => (
 							<ProductListing
+								key={`product-${i}`}
 								product={product}
 								index={i}
-								key={i}
 							/>
 						))}
 					</div>
